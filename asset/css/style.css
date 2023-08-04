@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Commissioner", sans-serif;
+  list-style: none;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+img {
+  width: 100%;
+}
+
+nav img {
+  width: 100px;
+}
+
+.mastercraft,
+.numbers,
+.about {
+  border: 1px;
+  border-radius: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 30px;
+  text-align: center;
+  max-width: 500px;
+  margin: 50px auto;
+}
+.mastercraft .masterimg {
+  width: 100px;
+  position: relative;
+  top: -64px;
+}
+.mastercraft h3 {
+  font-size: 42px;
+  margin-top: -33px;
+}
+.mastercraft p {
+  color: hsl(0, 0%, 48%);
+  font-size: 26px;
+  line-height: 34px;
+  margin: 20px 0;
+}
+.mastercraft .btn-bookmark {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+.mastercraft .btn-bookmark .btn {
+  background-color: hsl(176, 50%, 47%);
+  color: #ffff;
+  padding: 20px 30px;
+  border: 1px;
+  border-radius: 40px;
+  width: 360px;
+  font-size: 24px;
+}
+.mastercraft .btn-bookmark .bookmark {
+  width: 70px;
+  margin-left: 10px;
+}
+
+/* .numbers {
+  padding: 30px;
+} */
+
+.numbers .num-no {
+  font-size: 32px;
+  font-weight: 800;
+}
+.numbers .num-words {
+  color: hsl(0, 0%, 48%);
+  font-size: 20px;
+  margin: 13px 0;
+}
+.numbers .border {
+  border-bottom: 2px solid hsl(0, 0%, 48%);
+  width: 122px;
+  margin: 30px auto;
+}
+.numbers .num-no1 {
+  font-size: 32px;
+  font-weight: 800;
+}
+.about {
+  text-align: justify;
+}
+.about h3 {
+  font-size: 24px;
+  margin: 25px 0px 10px;
+}
+.about p {
+  font-size: 18px;
+  color: hsl(0, 0%, 48%);
+  line-height: 30px;
+  margin: 20px 0;
+}
+
+.inside-about {
+  border-radius: 10px;
+  border: 2px solid hsl(0, 0%, 77%);
+  padding: 25px;
+  margin: 40px 0;
+}
+.inside-about .bamboo .pledge {
+  color: hsl(176, 50%, 47%);
+  margin: 10px 0;
+}
+.inside-about .number-101 h2 {
+  font-weight: 800;
+  font-size: 35px;
+}
+.inside-about .btn-reward {
+  font-weight: 700;
+  color: #ffff;
+  background-color: hsl(176, 50%, 47%);
+  font-size: 18px;
+  padding: 15px;
+  width: 182px;
+  border: 1px;
+  border-radius: 27px;
+}
+
+.inside-about .number-101 {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  align-items: center;
+  margin: 40px 0;
+}
+.inside-about-lonely {
+  color: hsl(0, 0%, 48%);
+}
+.inside-about .bamboo .lonely {
+  color: hsl(0, 0%, 48%);
+}
+.inside-about .btn-color {
+  color: #ffff;
+  background-color: hsl(0, 0%, 48%);
+}
