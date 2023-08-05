@@ -8,9 +8,17 @@
 }
 
 .container {
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 20px;
+}
+.overflow .image-hero {
+  background-image: url("../image/image-hero-desktop.jpg");
+  height: 400px;
+}
+
+.all {
+  position: relative;
 }
 
 img {
@@ -19,6 +27,22 @@ img {
 
 nav img {
   width: 100px;
+}
+nav .hamburger {
+  display: none;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  width: 177px;
+  font-size: 12px;
 }
 
 .mastercraft,
@@ -60,6 +84,10 @@ nav img {
   border-radius: 40px;
   width: 360px;
   font-size: 24px;
+}
+
+.mastercraft .btn-bookmark .btn-bs {
+  display: none;
 }
 .mastercraft .btn-bookmark .bookmark {
   width: 70px;
@@ -143,4 +171,135 @@ nav img {
 .inside-about .btn-color {
   color: #ffff;
   background-color: hsl(0, 0%, 48%);
+}
+
+@media (max-width: 911px) {
+  nav {
+    position: relative;
+  }
+  nav ul {
+    display: block;
+    position: absolute;
+    background-color: blue;
+    right: -200px;
+    transform: translateX(320px);
+    transition: 0.6s;
+  }
+
+  .active {
+    transform: translateX(0);
+  }
+  nav .hamburger {
+    display: block;
+  }
+  nav .hamburger img {
+    width: 30px;
+  }
+  .overflow {
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 900px) {
+  .mastercraft .masterimg {
+    width: 55px;
+  }
+  .mastercraft h3 {
+    font-size: 24px;
+    /* margin-top: -33px; */
+  }
+
+  .mastercraft p {
+    font-size: 15px;
+    margin: 5px 0;
+  }
+
+  .mastercraft .btn-bookmark .btn {
+    width: 171px;
+    font-size: 14px;
+    height: 54px;
+    font-weight: 600;
+  }
+  .mastercraft .btn-bookmark .bookmark {
+    display: none;
+  }
+  .mastercraft .btn-bookmark .btn-bs {
+    display: flex;
+    align-items: center;
+    border: 1px;
+    border-radius: 35px;
+    width: 140px;
+  }
+  .mastercraft .btn-bookmark .btn-bs img {
+    width: 50px;
+    margin-right: 10px;
+    font-weight: 400;
+  }
+  .mastercraft .btn-bookmark .btn-bs p {
+    font-weight: 600;
+  }
+  .mastercraft .btn-bookmark {
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+
+  .numbers {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+  }
+  .numbers .num-flex .border {
+    display: none;
+    border-right: 1px solid;
+  }
+  .numbers .num-no {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .numbers .num-words {
+    font-size: 12px;
+    margin: 4px 0;
+  }
+
+  .about h3 {
+    font-size: 18px;
+    margin: 5px 0px 6px;
+  }
+  .about p {
+    font-size: 12px;
+    margin: 2px 0;
+  }
+  .inside-about .bamboo {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .inside-about .bamboo .pledge {
+    margin: 5px 0;
+  }
+  .inside-about .number-101 {
+    margin: 10px 0;
+    width: 65px;
+  }
+  .inside-about .width-101 {
+    width: 60px;
+  }
+  .inside-about .width-1011 {
+    width: 43px;
+  }
+  .inside-about .flex-101 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .inside-about .btn-reward {
+    font-weight: 600;
+    font-size: 12px;
+    width: 149px;
+    height: 45px;
+  }
+  .inside-about .number-101 h2 {
+    font-weight: 600;
+    font-size: 26px;
+  }
 }
