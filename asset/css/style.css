@@ -76,6 +76,7 @@ nav ul {
   justify-content: center;
   margin: 40px 0;
 }
+
 .mastercraft .btn-bookmark .btn {
   background-color: hsl(176, 50%, 47%);
   color: #ffff;
@@ -84,6 +85,10 @@ nav ul {
   border-radius: 40px;
   width: 360px;
   font-size: 24px;
+}
+.mastercraft .btn-bookmark .btn:hover,
+.inside-about .flex-101 .btn-reward:hover {
+  background-color: hsl(176, 72%, 28%);
 }
 
 .mastercraft .btn-bookmark .btn-bs {
